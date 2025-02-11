@@ -464,7 +464,9 @@ justify-content: center;
 }
 form {
   padding: 1rem;
-  /* box-shadow: .1rem .1rem 3rem rgba(8, 49, 8, 0.753); */
+  border: 1px solid var(--hover-color);
+  border-radius: 2rem;
+  box-shadow: 1px 5px 16px var(--header-footer-bcg-color);
 }
 
 input {
