@@ -177,10 +177,8 @@ function validateForm() {
 
   if (submitBtn.disabled) {
     formular.style.boxShadow = ".1rem .1rem 3rem rgba(196, 68, 68, 0.75)";
-    formular.style.borderRadius = "2rem";
   } else {
     formular.style.boxShadow = ".1rem .1rem 3rem rgba(16, 90, 16, 0.9)";
-    formular.style.borderRadius = "2rem";
   }
 }
 
