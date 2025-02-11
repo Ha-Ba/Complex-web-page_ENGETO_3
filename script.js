@@ -176,10 +176,10 @@ function validateForm() {
   submitBtn.disabled = !(allFieldsFilled && emailsMatch && oneRadioChecked);
 
   if (submitBtn.disabled) {
-    formular.style.boxShadow = ".1rem .1rem 3rem rgba(109, 1, 1, 0.75)";
+    formular.style.boxShadow = ".1rem .1rem 3rem rgba(196, 68, 68, 0.75)";
     formular.style.borderRadius = "2rem";
   } else {
-    formular.style.boxShadow = ".1rem .1rem 3rem rgba(8, 49, 1, 0.753)";
+    formular.style.boxShadow = ".1rem .1rem 3rem rgba(16, 90, 16, 0.9)";
     formular.style.borderRadius = "2rem";
   }
 }
