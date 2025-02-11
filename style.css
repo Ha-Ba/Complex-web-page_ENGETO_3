@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Fuzzy Bubbles", Arial, Helvetica, sans-serif;
+  color: var(--base-text-color);
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+
+:root {
+--body-bcg-color: rgba(221, 186, 143, 0.55);
+--base-text-color: rgb(21, 21, 21);
+--cards-text-color: rgb(21, 21, 21);
+--header-footer-bcg-color: rgba(138, 62, 8);
+--header-footer-text-color: rgb(250, 250, 250);
+--hover-color: #c28f52;
+--button-bcg-color: #203f4eec;
+--button-color: rgb(250, 250, 250);
+--button-border-color: rgb(87, 48, 16, 0.5);
+--headings-color:  #094D71;
+--image-bcg-opacity-color: rgba(73, 65, 48, 0.85);
+--image-par-color: rgb(218, 135, 33);
+--inputset-text-color: rgb(21, 21, 21); 
+--slider-dott-color: rgb(238, 232, 220); /* barva puntíku pro light */
+--slider-bcg-color: rgba(138, 62, 8); /* barva pozadí switcheru */
+--thanks-bcg-color:  rgba(184, 209, 184, 0.9);
+}
+
+[data-theme="dark"] {
+  --body-bcg-color: rgba(36, 22, 8, 0.993); 
+  --base-text-color: rgb(230, 219, 219);
+  --cards-text-color: rgb(21, 21, 21);  
+  --header-footer-bcg-color: rgba(138, 62, 8);
+  --header-footer-text-color: rgb(250, 250, 250);
+  --hover-color: #f3e3cf;
+  --button-color: rgba(39, 17, 6);
+  --button-bcg-color: rgb(236, 159, 65);
+  --headings-color:  #6a9eb9;
+  --slider-dott-color: rgb(238, 232, 220);
+  --slider-bcg-color: rgba(138, 62, 8);
+  --thanks-bcg-color:  rgba(3, 34, 3, 0.9);
+}
+
+.roboto-font-family {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  background-color: var(--body-bcg-color);    
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23432f13' fill-opacity='0.003' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  min-width: 350px;
+}
+
+h1, h2, h3 {
+  color: var(--headings-color);
+}
+
+h1 {
+  font-size: 6rem;
+  padding-bottom: 4rem;
+  padding-top: 4.5rem;
+  text-align: center;
+  transition: .5s;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  transition: .5s;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  transition: .5s;
+}
+
+p, .why-list li {
+  font-size: 1.5rem;
+}
+
+.why-list {
+padding-left: 1rem;
+}
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  height: 7rem;
+  background-color: var(--header-footer-bcg-color);
+  color: var(--header-footer-text-color);
+  text-align: center;
+} 
+
+.header-wrapper, main, .footer-wrapper {
+  max-width: 1400px;
+  align-items: center;
+  
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 8rem);
+  height: 7rem;
+  margin: 0 4rem;
+  align-items: center;
+}
+
+/* Základní odsazení na stránce */
+main {
+  min-height: calc(100vh - 9rem);
+  width: calc(100dvw - 10rem);
+  max-width: 1400px;
+  min-width: 4.5rem;
+  margin: 0 auto;
+  /*doplněno pro scroll-up umístění - není hotovo: */
+  position: relative; 
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+.logo {
+  flex-grow: 1;
+  text-align: start;
+  border-radius: .8rem;
+}
+
+.logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.switcher-box {
+  display: flex;
+  column-gap: .5rem;
+  align-items: center;
+  padding: .2rem;
+  justify-content: flex-end;
+  border-radius: 2rem;
+  background-color: var(--header-footer-text-color); 
+  /* Pozadí boxu pro switcher a ikonu*/
+  scale: .8;
+}
+
+.switcher-description {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;  
+  padding-left: .5rem;
+}
+
+.switcher-description i {
+  color: var(--header-footer-bcg-color); /* barva ikonky OK */
+  scale: 1.5;
+}
+  
+/* Převzato z W3schools.com*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+  margin: 0.0125rem 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--slider-bcg-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 32px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--slider-dott-color);
+  /* barva puntíku samotného */
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--header-footer-bcg-color);
+  /* pozadí switcheru při darkmode - netřeba dávat do theme-dark*/
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--header-footer-bcg-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  transform: translateX(27px);
+}
+.switcher-box label {
+  padding-bottom: 0;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 32px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Menu icon */
+.fa-bars {
+  display: none;
+}
+
+.menu-icon i {
+  color: var(--header-footer-text-color);
+}
+
+header nav {
+  margin-right: 1rem;
+}
+
+header nav li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1rem .8rem;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--header-footer-text-color);
+  font-size: 1.5rem;
+  padding: .4rem .8rem;
+}
+
+header a:hover {
+  cursor: pointer;
+  font-weight: bold;
+  transition: .2s;
+  box-sizing: border-box;
+  border-bottom: 0.35rem solid var(--hover-color);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-items: end;
+}
+
+.header-right {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+#about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 4rem;
+  row-gap: 4rem;
+}
+
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4rem;
+  row-gap: 1rem;
+  box-shadow: 1px 5px 16px var(--header-footer-bcg-color); 
+  padding: 2rem;
+  align-items: baseline;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.85rem;
+}
+.about-us-card, .room-card {
+  background-color: var(--hover-color);
+}
+
+.about-us-card p, .about-us-card li, .room-card p {
+  color: var(--cards-text-color);
+  transition: .5s;
+}
+
+.why-list ul {
+  margin-top: 10px;
+}
+
+.why-list li {
+  list-style-type: circle;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+/* hr {
+  height: 0.2rem;
+  width: 60%;
+  background-color: var(--header-footer-bcg-color);
+  opacity: 0.6;
+  box-shadow: 2px 4px 8px var(--header-footer-bcg-color); 
+  margin: 5rem auto 3rem auto;
+  border-radius: 5px;
+} */
+
+.room {
+  height:250px;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: .85rem;
+  transition: transform 0.5s;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+}
+
+.room-par {
+  color: var(--image-par-color);
+  background-color: var(--image-bcg-opacity-color);
+  text-align: center;
+  justify-content: center;
+  transition-property: height, padding, opacity;
+  transition-duration: 0.6s;
+  transition-timing-function: linear;
+  font-weight: 800;
+  border-radius: .85rem .85rem 0 0;
+}
+
+.room-hidden {
+  height: 0;
+  max-height: 5rem;
+  padding: 0 2rem;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.room-shown {
+  height: 40px;
+  padding: .8rem 2rem;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* ===================== */
+.rooms-about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  row-gap: 0;
+}
+
+.rooms-photos {
+margin-bottom: 2.5rem;
+}
+
+.room-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 5px 16px var(--header-footer-bcg-color); 
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.85rem;
+}
+.room-card-text {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  }
+
+.reserve-card-btn {
+  background-color: var(--button-bcg-color);
+  border: 1px solid var(--button-border-color);
+  border-radius: .85rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  font-weight: 600;
+  width: calc(100% / 3);
+  min-width: 150px;
+  margin: 1rem auto 1rem auto;
+  align-self: flex-end;
+  padding: .5rem;
+  text-align: center;
+  /* justify-content: flex-end; */
+}
+.reserve-card-btn a {
+    color: var(--button-color);
+    text-decoration: none;
+}
+/* ===================== */
+
+.image-1 {
+  background-image: url(./images/red.jpeg);
+}
+.image-2 {
+  background-image: url( ./images/green.jpg);
+}
+.image-3 {
+  background-image: url(./images/blue.jpg);
+}
+.image-4 {
+  background-image: url(./images/black.jpg);
+}
+
+/* Formulář */
+/* https://navody.webotvurci.cz/kb/jak-upravit-design-formulare-pomoci-css/ */
+#reservations {
+display: flex;
+justify-content: center;
+}
+
+.formular {
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+form {
+  padding: 1rem;
+  /* box-shadow: .1rem .1rem 3rem rgba(8, 49, 8, 0.753); */
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin: 0.1rem 0 0.5rem 0;
+  border: 1px solid var(--button-border-color);
+  border-radius: .85rem;
+}
+
+fieldset {
+  margin-bottom: 18px;
+}
+
+.termset {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin: 2rem auto;
+}
+
+.userset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 2rem auto;
+}
+
+
+/* .emails {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  width: 100%;
+} */
+
+
+.text-message {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.user-infoset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+/* .number-email {
+  width: 50%;
+} */
+
+textarea, .mail1, .mail2, #date, #timeto, #timefrom {
+  color: var(--inputset-text-color);
+}
+/* .mail1, .mail2, .termset input, .userset input {
+  margin-top: .5rem;
+} */
+
+legend, label {
+  font-weight: 600;
+  margin: .5rem 0;
+  font-size: 1.2rem;
+}
+
+.radio-buttons { 
+  display: flex;
+  column-gap: 30px;
+} 
+
+.selected-room {
+  scale: 1.7;
+  /* margin: 5px 0; */
+  justify-self: center;
+  align-self: center;
+}
+
+.inline-rb {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  text-align: start;
+  align-items: center;
+  align-content: center;
+  background-color: var(--button-bcg-color);
+  border: 1px solid var(--button-border-color);
+  border-radius: .85rem;;
+  
+}
+
+.inline-rb span {
+  color: var(--button-color);
+  align-items: center;
+}
+
+.inline-rb input {
+  /* margin-left: 1rem; */
+  padding: 1rem;
+  max-width: 20%;
+  max-height: 32px;
+  flex-basis: auto;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 800px;
+  height: 120px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0.5rem 0 0 0;
+  border: 1px solid var(--button-border-color);
+  border-radius: .85rem;
+}
+
+.message {
+  color: black;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  justify-content: end;
+  padding-right: 0.5rem;
+  margin-bottom: 2rem;
+}
+.counter p {
+  font-size: 1rem;
+  }
+
+/* ======================================================*/
+
+.user-email {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.emails {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+
+.number-email {
+  width: 50%;
+}
+/* ======================================================*/
+
+.mail2 {
+  margin-bottom: 2px;
+}
+
+.hidden-par {
+  padding-left: 18px;
+  font-size: 0.9rem;
+  padding-bottom: 15px;
+}
+
+.mail-different {
+  display: none;
+  color: #db0000;
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+/* ===================== Submit button START===========================*/
+
+.submit-btn {
+  color: var(--button-color);
+  background-color: var(--button-bcg-color);
+  border-radius: .85rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  font-weight: 600;
+  margin: 2rem auto .5rem auto;
+  align-items: center;
+  max-width: 200px;
+}
+/* .submit-btn:not(:disabled) {
+  border: .2rem solid var(--button-border-color);
+} */
+
+.submit-btn:disabled {
+  background-color: var(--button-bcg-color);
+  color: var(--button-color);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.submit-btn:hover:not(:disabled) {
+  cursor: pointer;
+}
+
+/* ===================== Submit button END ===========================*/
+.thanks {
+  display: none;
+  text-align: center;
+  margin-top: 2rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: var(--thanks-bcg-color);
+}
+
+.scroll-up {
+  padding: 2rem;
+  color: var(--header-footer-bcg-color);
+  position: fixed;
+  bottom: 12rem;
+  right: 2rem;
+}
+
+.scroll-up i {
+  display: none;
+  z-index: 1;
+  cursor: pointer;
+  scale: 2;
+  color: var(--hover-color);
+}
+
+.scroll-up i:hover {
+  scale: 2.5;
+  }
+
+/* Patička */
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-wrapper p {
+  color: var(--header-footer-text-color);
+  font-size: 0.8rem;
+}
+
+
+

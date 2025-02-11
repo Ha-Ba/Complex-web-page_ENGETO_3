@@ -1,0 +1,67 @@
+@media (max-width: 992px) {
+    h1 {
+        font-size: 4.25rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.85rem;
+    }
+
+.radio-buttons {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-self: center;
+    justify-items: space-evenly;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+.termset {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.userset {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin: 2rem auto;
+}
+
+.user-infoset {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.emails {
+    flex-direction: column;
+}
+
+.number-email {
+    width: 100%;
+}
+}
+
+@media (max-width: 576px) {
+.inline-rb {
+    column-gap: 1rem;
+    scale: .9; 
+}
+.inline-rb span {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+}

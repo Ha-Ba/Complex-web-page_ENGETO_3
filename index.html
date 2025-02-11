@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/formQuery.css" />
+    <link rel="stylesheet" href="./styles/headerQuery.css" />
+    <link rel="stylesheet" href="./styles/roomsQuery.css">
+    <link rel="stylesheet" href="./styles/aboutUsQuery.css">
+    <link rel="stylesheet" href="./styles/scrollQuery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Hana Barochová -->
+    <!-- hana.barochova02@gmail.com -->
+    <!-- haninab._09456 -->
+    <!-- Po předchozí dohodě domluvena náhrada kontroly shody hesla za kontrolu shody emailů. Nehodilo se do konceptu stránky. -->
+    <title>Komplexní webová stránka</title>
+  </head>
+  <body>
+   <!--  ===================== HEADER =========================== -->
+    <header id="headerId">
+      <div class="header-wrapper">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo" class="logo"/>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a class="linkabout" href="#about-us">O&nbsp;nás</a></li>
+          <li><a class="linkabout" href="#showrooms">Místnosti</a></li>
+          <li><a class="linkhome" href="#reservations">Rezervace</a></li>
+        </ul>
+      </nav>
+      
+        <div class="header-right"> 
+        <div class="switcher-box">
+            <span class="switcher-description">
+             <i class="fa-regular fa-sun"></i>
+             <!-- <i class="fa-solid fa-moon"></i> -->
+             </span>
+           
+             <!-- Rounded switch -->
+             <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+          <!-- <i class="fa-solid fa-xmark fa-sharp"></i> -->
+        </div>
+        </div>
+      </div>
+    </header>
+<!--  ================== Celý obsah ============================== -->
+    <main>
+   
+      <h1>Hive hub</h1>
+   
+      <section id="about-us">
+        <div class="about-us-card">
+        <h3>Coworkingové centrum Hive hub, ideální místo pro Vaše akce</h3>
+        <p>Objevte coworkingové centrum Hive hub, moderní prostor navržený pro podporu vaší kreativity a efektivity. Naše zasedací místnosti jsou perfektní volbou pro školení, týmové porady, brainstormingy a další akce, které vyžadují inspirativní prostředí.
+        </p>
+        </div>
+
+        <div class="about-us-card">
+          <h3>Proč si vybrat Hive hub</h3>
+          <div>
+          <p>Naše zasedací místnosti jsou vybaveny vším, co potřebujete pro úspěšnou akci:
+          </p>
+
+          <ul class="why-list">
+            <li>Vysokorychlostní Wi-Fi</li>
+            <li>Dataprojektor a plátno na promítání</li>
+            <li>Zatemňovací rolety</li>
+            <li>Flipchart a fixy</li>
+            <li>Nepřímé osvětlení</li>
+            <li>Klimatizace</li>
+          </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section id="showrooms">
+        <div>
+          <div>
+            <h2 class="our-rooms">Zasedací místnosti</h2>
+          </div>
+        
+        <div class="rooms-photos">
+          <div class="rooms">
+            <div class="room image-1"><p class="room-par room-hidden red">Červená</p></div>
+            <div class="room image-2"><p class="room-par room-hidden green">Zelená</p></div>
+            <div class="room image-3"><p class="room-par room-hidden blue">Modrá</p></div>
+            <div class="room image-4"><p class="room-par room-hidden black">Černá</p></div>
+          </div>
+        </div>
+      
+      
+        <div class="rooms-about">
+          <div class="room-card">
+            <div class="room-card-text">
+            <h3>Červená zasedací místnost</h3>
+              <p>S kapacitou pro 14 osob je ideální pro menší školení nebo pracovní skupiny. Její energická barva podněcuje kreativitu a aktivní diskusi.
+              </p>
+            </div>
+              <div class="reserve-card-btn"><a href="#reservations">Rezervovat</a></div>
+          </div>
+        
+          <div class="room-card">
+            <div class="room-card-text">
+            <h3>Zelená zasedací místnost</h3>
+              <p>Tato místnost pojme až 12 osob a nabízí klidné prostředí, které je perfektní pro strategické plánování a týmové porady. Zelená barva podporuje relaxaci a soustředění.
+              </p>
+            </div>
+              <div class="reserve-card-btn"><a href="#reservations">Rezervovat</a></div>
+          </div>
+        
+          <div class="room-card">
+            <div class="room-card-text">
+            <h3>Modrá zasedací místnost</h3>
+              <p>S kapacitou pro 10 osob je skvělou volbou pro individuální konzultace nebo malé skupinové workshopy. Modrá barva navozuje  pocit důvěry a stability.
+              </p>
+            </div>
+              <div class="reserve-card-btn"><a href="#reservations">Rezervovat</a></div>
+          </div>
+        
+          <div class="room-card">
+            <div class="room-card-text">
+              <h3>Černá zasedací místnost</h3>
+              <p>Naše největší místnost s kapacitou až 26 osob je ideální pro velké školení, prezentace nebo firemní akce. Elegantní černý design dodává prostoru profesionální atmosféru.
+            </p>
+          </div>
+             <div class="reserve-card-btn"><a href="#reservations">Rezervovat</a></div>
+          </div>
+        </div>
+
+      </div>
+      </section>
+
+      
+<!--  ================================================ -->
+<section id="reservations">
+        <div class="formular">
+          <h2>Rezervační formulář</h2>
+          <form action="">
+            <fieldset>
+              <legend>Vyberte místnost:</legend>
+              <div class="radio-buttons">
+                <div class="inline-rb">
+                  <input type="radio" id="r-red" name="rooms" class="selected-room" value="Červená" required>
+                  <span for="r-red">Červená</span>
+                </div>
+              
+                <div class="inline-rb">
+                  <input type="radio" id="r-green" name="rooms" class="selected-room" value="Zelená" required>
+                  <span for="r-green">Zelená</span>
+                </div>
+              
+                <div class="inline-rb">
+                  <input type="radio" id="r-blue" name="rooms" class="selected-room" value="Modrá" required>
+                  <span for="r-blue">Modrá</span>
+                </div>
+
+                <div class="inline-rb">
+                  <input type="radio" id="r-black" name="rooms" class="selected-room" value="Černá" required>
+                  <span for="r-black">Černá</span>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="reservation-infoset">
+              <div class="termset">
+
+                <div class="inline-term">
+                  <label for="">Datum:</label>
+                  <input type="date" name="date" id="date" required="required">
+                </div>
+
+                <div class="inline-term">
+                  <label for="">Čas od:</label>
+                  <input type="time" name="time" id="timefrom" required="required">
+                </div>
+
+                <div class="inline-term">
+                  <label for="">Čas do:</label>
+                  <input type="time" name="time" id="timeto" required="required">
+                </div>
+              </div>
+
+              <div class="text-message">
+                <textarea name="text" id="textarea" class="message" maxlength="500" placeholder="Váš vzkaz pro nás"></textarea>
+                <div class="counter">
+                  <p class="counter-begin">Zbývající počet znaků: </p>
+                  <p class="text-countdown">500</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="user-infoset">
+              <div class="inline-user inline">
+                <label for="">Jméno:</label>
+                <input type="text" name="name" id="name" placeholder="Vaše jméno *" required="required">
+              </div>
+              <div class="inline-user inline">
+                <label for="">Příjmení:</label>
+                <input type="text" name="surname" id="surname" placeholder="Vaše příjmení *" required="required">
+              </div>            
+            
+              <div class="inline-email inline">
+                <label for="mail1">Váš e-mail:</label>
+                <input type="email" class="mail1" required="required" placeholder="Váš e-mail poprvé *">
+              </div>
+            
+              <div class="inline-email inline">
+                <label for="mail2">Váš e-mail podruhé:</label>
+                <input type="email" class="mail2" required="required" placeholder="Váš e-mail podruhé *">
+              </div>
+            </div>
+
+            <div>
+              <p class="hidden-par mail-different">E-maily se neshodují.</p>
+            </div>
+
+            <div class="submit">    
+              <p class="hidden-par thanks">Děkujeme za odeslání žádosti o rezervaci zasedací místnosti. <br/>Vaše žádost byla úspěšně přijata. Bližší informace obdržíte e-mailem na Vámi zadanou e-mailovou adresu.</p>
+              <input type="submit" class="submit-btn" />
+            </div>
+          </form>
+        </div>
+</section>
+
+<!--  ================================================ -->
+    <div class="scroll-up">    
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+     </main>
+  <footer>
+      <div class="footer-wrapper">
+        <p>&copy; No-HanBa Design
+        </p>
+        <p>Web vytvořen v roce 2025</p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

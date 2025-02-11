@@ -1,2 +1,2 @@
-# Complex-web-page_ENGETO_3
-Závěrečný projekt ke kurzu ENGETO
+# Complex-web-page-JS
+Třetí projekt - komplexní webová stránka s JS
