@@ -5,66 +5,63 @@
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
-}
+  }
 
-.room-card {
-  box-shadow: 1px 5px 10px var(--header-footer-bcg-color); 
-  padding: 1rem;
-  /* margin-top: 2rem; */
-  column-gap: 2rem;
-}
+  .room-card {
+    box-shadow: 1px 5px 10px var(--header-footer-bcg-color);
+    padding: 1rem;
+    column-gap: 2rem;
+  }
 
-.rooms {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
-}
+  .rooms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
 }
 
 @media (max-width: 992px) {
-.room {
-  height:200px;
-}
-@media (max-width: 992px) {
-  .room-card p {
-    font-size: .95rem;
+  .room {
+    height: 200px;
   }
-  h2 {
-    font-size: 2.5rem;
+  @media (max-width: 992px) {
+    .room-card p {
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
   }
-  h3 {
-    font-size: 1.5rem;
-  }
-}
-
 }
 
 @media (max-width: 768px) {
-.room {
-  height:250px;
-}
+  .room {
+    height: 250px;
+  }
 
- .rooms {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  column-gap: 0;
-  row-gap: 40px;
-}
+  .rooms {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 0;
+    row-gap: 40px;
+  }
 
-.rooms-about {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  row-gap: 4rem;
-}
+  .rooms-about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 4rem;
+  }
 
-.room-card {
-  box-shadow: 1px 5px 10px var(--header-footer-bcg-color); 
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
+  .room-card {
+    box-shadow: 1px 5px 10px var(--header-footer-bcg-color);
+    padding: 1rem;
+    margin-top: 2rem;
+  }
 }

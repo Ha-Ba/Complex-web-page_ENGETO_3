@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -12,37 +12,37 @@
 }
 
 :root {
---body-bcg-color: rgba(221, 186, 143, 0.55);
---base-text-color: rgb(21, 21, 21);
---cards-text-color: rgb(21, 21, 21);
---header-footer-bcg-color: rgba(138, 62, 8);
---header-footer-text-color: rgb(250, 250, 250);
---hover-color: #c28f52;
---button-bcg-color: #203f4eec;
---button-color: rgb(250, 250, 250);
---button-border-color: rgb(87, 48, 16, 0.5);
---headings-color:  #094D71;
---image-bcg-opacity-color: rgba(73, 65, 48, 0.85);
---image-par-color: rgb(218, 135, 33);
---inputset-text-color: rgb(21, 21, 21); 
---slider-dott-color: rgb(238, 232, 220); /* barva puntíku pro light */
---slider-bcg-color: rgba(138, 62, 8); /* barva pozadí switcheru */
---thanks-bcg-color:  rgba(184, 209, 184, 0.9);
+  --body-bcg-color: rgba(221, 186, 143, 0.55);
+  --base-text-color: rgb(21, 21, 21);
+  --cards-text-color: rgb(21, 21, 21);
+  --header-footer-bcg-color: rgba(138, 62, 8);
+  --header-footer-text-color: rgb(250, 250, 250);
+  --hover-color: #c28f52;
+  --button-bcg-color: #203f4eec;
+  --button-color: rgb(250, 250, 250);
+  --button-border-color: rgb(87, 48, 16, 0.5);
+  --headings-color: #094d71;
+  --image-bcg-opacity-color: rgba(73, 65, 48, 0.85);
+  --image-par-color: rgb(218, 135, 33);
+  --inputset-text-color: rgb(21, 21, 21);
+  --slider-dott-color: rgb(238, 232, 220); /* barva puntíku pro light */
+  --slider-bcg-color: rgba(138, 62, 8); /* barva pozadí switcheru */
+  --thanks-bcg-color: rgba(184, 209, 184, 0.9);
 }
 
 [data-theme="dark"] {
-  --body-bcg-color: rgba(36, 22, 8, 0.993); 
+  --body-bcg-color: rgba(36, 22, 8, 0.993);
   --base-text-color: rgb(230, 219, 219);
-  --cards-text-color: rgb(21, 21, 21);  
+  --cards-text-color: rgb(21, 21, 21);
   --header-footer-bcg-color: rgba(138, 62, 8);
   --header-footer-text-color: rgb(250, 250, 250);
   --hover-color: #f3e3cf;
   --button-color: rgba(39, 17, 6);
   --button-bcg-color: rgb(236, 159, 65);
-  --headings-color:  #6a9eb9;
+  --headings-color: #6a9eb9;
   --slider-dott-color: rgb(238, 232, 220);
   --slider-bcg-color: rgba(138, 62, 8);
-  --thanks-bcg-color:  rgba(3, 34, 3, 0.9);
+  --thanks-bcg-color: rgba(3, 34, 3, 0.9);
 }
 
 .roboto-font-family {
@@ -54,12 +54,14 @@
 }
 
 body {
-  background-color: var(--body-bcg-color);    
+  background-color: var(--body-bcg-color);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23432f13' fill-opacity='0.003' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   min-width: 350px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--headings-color);
 }
 
@@ -68,7 +70,7 @@ h1 {
   padding-bottom: 4rem;
   padding-top: 4.5rem;
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 h2 {
@@ -76,37 +78,40 @@ h2 {
   margin-top: 4rem;
   margin-bottom: 3rem;
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 h3 {
   font-size: 1.8rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-p, .why-list li {
+p,
+.why-list li {
   font-size: 1.5rem;
 }
 
 .why-list {
-padding-left: 1rem;
+  padding-left: 1rem;
 }
 
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: center;
   height: 7rem;
   background-color: var(--header-footer-bcg-color);
   color: var(--header-footer-text-color);
   text-align: center;
-} 
+}
 
-.header-wrapper, main, .footer-wrapper {
+.header-wrapper,
+main,
+.footer-wrapper {
   max-width: 1400px;
   align-items: center;
-  
 }
 
 .header-wrapper {
@@ -118,15 +123,13 @@ header, footer {
   align-items: center;
 }
 
-/* Základní odsazení na stránce */
 main {
   min-height: calc(100vh - 9rem);
   width: calc(100dvw - 10rem);
   max-width: 1400px;
   min-width: 4.5rem;
   margin: 0 auto;
-  /*doplněno pro scroll-up umístění - není hotovo: */
-  position: relative; 
+  position: relative;
 }
 
 section {
@@ -136,7 +139,7 @@ section {
 .logo {
   flex-grow: 1;
   text-align: start;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .logo img {
@@ -146,28 +149,28 @@ section {
 
 .switcher-box {
   display: flex;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
   align-items: center;
-  padding: .2rem;
+  padding: 0.2rem;
   justify-content: flex-end;
   border-radius: 2rem;
-  background-color: var(--header-footer-text-color); 
-  /* Pozadí boxu pro switcher a ikonu*/
-  scale: .8;
+  background-color: var(--header-footer-text-color);
+  /* Barva pozadí boxu pro switcher a ikonu*/
+  scale: 0.8;
 }
 
 .switcher-description {
   display: flex;
   align-items: center;
-  padding-right: 0.5rem;  
-  padding-left: .5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .switcher-description i {
-  color: var(--header-footer-bcg-color); /* barva ikonky OK */
+  color: var(--header-footer-bcg-color);
   scale: 1.5;
 }
-  
+
 /* Převzato z W3schools.com*/
 /* The switch - the box around the slider */
 .switch {
@@ -194,8 +197,8 @@ section {
   right: 0;
   bottom: 0;
   background-color: var(--slider-bcg-color);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   height: 32px;
 }
 
@@ -208,13 +211,13 @@ section {
   bottom: 4px;
   background-color: var(--slider-dott-color);
   /* barva puntíku samotného */
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
   background-color: var(--header-footer-bcg-color);
-  /* pozadí switcheru při darkmode - netřeba dávat do theme-dark*/
+  /* pozadí switcheru při darkmode */
 }
 
 input:focus + .slider {
@@ -226,6 +229,7 @@ input:checked + .slider:before {
   -ms-transform: translateX(27px);
   transform: translateX(27px);
 }
+
 .switcher-box label {
   padding-bottom: 0;
 }
@@ -255,20 +259,20 @@ header nav {
 header nav li {
   display: inline-block;
   list-style-type: none;
-  padding: 1rem .8rem;
+  padding: 1rem 0.8rem;
 }
 
 header a {
   text-decoration: none;
   color: var(--header-footer-text-color);
   font-size: 1.5rem;
-  padding: .4rem .8rem;
+  padding: 0.4rem 0.8rem;
 }
 
 header a:hover {
   cursor: pointer;
   font-weight: bold;
-  transition: .2s;
+  transition: 0.2s;
   box-sizing: border-box;
   border-bottom: 0.35rem solid var(--hover-color);
   border-radius: 0.5rem 0.5rem 0 0;
@@ -280,9 +284,9 @@ header nav ul {
 }
 
 .header-right {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-icon {
@@ -303,20 +307,23 @@ align-items: center;
   flex-direction: column;
   column-gap: 4rem;
   row-gap: 1rem;
-  box-shadow: 1px 5px 16px var(--header-footer-bcg-color); 
+  box-shadow: 1px 5px 16px var(--header-footer-bcg-color);
   padding: 2rem;
   align-items: baseline;
   width: 100%;
   height: 100%;
   border-radius: 0.85rem;
 }
-.about-us-card, .room-card {
+.about-us-card,
+.room-card {
   background-color: var(--hover-color);
 }
 
-.about-us-card p, .about-us-card li, .room-card p {
+.about-us-card p,
+.about-us-card li,
+.room-card p {
   color: var(--cards-text-color);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .why-list ul {
@@ -329,22 +336,12 @@ align-items: center;
   margin-left: 20px;
 }
 
-/* hr {
-  height: 0.2rem;
-  width: 60%;
-  background-color: var(--header-footer-bcg-color);
-  opacity: 0.6;
-  box-shadow: 2px 4px 8px var(--header-footer-bcg-color); 
-  margin: 5rem auto 3rem auto;
-  border-radius: 5px;
-} */
-
 .room {
-  height:250px;
+  height: 250px;
   max-width: 100%;
   background-position: center;
   background-size: cover;
-  border-radius: .85rem;
+  border-radius: 0.85rem;
   transition: transform 0.5s;
 }
 
@@ -365,7 +362,7 @@ align-items: center;
   transition-duration: 0.6s;
   transition-timing-function: linear;
   font-weight: 800;
-  border-radius: .85rem .85rem 0 0;
+  border-radius: 0.85rem 0.85rem 0 0;
 }
 
 .room-hidden {
@@ -378,13 +375,12 @@ align-items: center;
 
 .room-shown {
   height: 40px;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   opacity: 1;
   display: flex;
   align-items: center;
 }
 
-/* ===================== */
 .rooms-about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -395,30 +391,31 @@ align-items: center;
 }
 
 .rooms-photos {
-margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .room-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 1px 5px 16px var(--header-footer-bcg-color); 
+  box-shadow: 1px 5px 16px var(--header-footer-bcg-color);
   padding: 1rem;
   margin-top: 2rem;
   width: 100%;
   height: 100%;
   border-radius: 0.85rem;
 }
+
 .room-card-text {
   display: flex;
   flex-direction: column;
   align-content: start;
-  }
+}
 
 .reserve-card-btn {
   background-color: var(--button-bcg-color);
   border: 1px solid var(--button-border-color);
-  border-radius: .85rem;
+  border-radius: 0.85rem;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.5s ease;
@@ -427,21 +424,20 @@ margin-bottom: 2.5rem;
   min-width: 150px;
   margin: 1rem auto 1rem auto;
   align-self: flex-end;
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: center;
-  /* justify-content: flex-end; */
 }
+
 .reserve-card-btn a {
-    color: var(--button-color);
-    text-decoration: none;
+  color: var(--button-color);
+  text-decoration: none;
 }
-/* ===================== */
 
 .image-1 {
   background-image: url(./images/red.jpeg);
 }
 .image-2 {
-  background-image: url( ./images/green.jpg);
+  background-image: url(./images/green.jpg);
 }
 .image-3 {
   background-image: url(./images/blue.jpg);
@@ -451,10 +447,9 @@ margin-bottom: 2.5rem;
 }
 
 /* Formulář */
-/* https://navody.webotvurci.cz/kb/jak-upravit-design-formulare-pomoci-css/ */
 #reservations {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .formular {
@@ -462,6 +457,7 @@ justify-content: center;
   width: 100%;
   max-width: 800px;
 }
+
 form {
   padding: 2rem;
   border: 1px solid var(--hover-color);
@@ -476,7 +472,7 @@ input {
   padding: 10px;
   margin: 0.1rem 0 0.5rem 0;
   border: 1px solid var(--button-border-color);
-  border-radius: .85rem;
+  border-radius: 0.85rem;
 }
 
 fieldset {
@@ -501,15 +497,6 @@ fieldset {
   margin: 2rem auto;
 }
 
-
-/* .emails {
-  display: flex;
-  flex-direction: row;
-  column-gap: 1.5rem;
-  width: 100%;
-} */
-
-
 .text-message {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -517,38 +504,36 @@ fieldset {
 }
 
 .user-infoset {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
-/* .number-email {
-  width: 50%;
-} */
-
-textarea, .mail1, .mail2, #date, #timeto, #timefrom {
+textarea,
+.mail1,
+.mail2,
+#date,
+#timeto,
+#timefrom {
   color: var(--inputset-text-color);
 }
-/* .mail1, .mail2, .termset input, .userset input {
-  margin-top: .5rem;
-} */
 
-legend, label {
+legend,
+label {
   font-weight: 600;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   font-size: 1.2rem;
 }
 
-.radio-buttons { 
+.radio-buttons {
   display: flex;
   column-gap: 30px;
-} 
+}
 
 .selected-room {
   scale: 1.7;
-  /* margin: 5px 0; */
   justify-self: center;
   align-self: center;
 }
@@ -566,8 +551,7 @@ legend, label {
   align-content: center;
   background-color: var(--button-bcg-color);
   border: 1px solid var(--button-border-color);
-  border-radius: .85rem;;
-  
+  border-radius: 0.85rem;
 }
 
 .inline-rb span {
@@ -576,7 +560,6 @@ legend, label {
 }
 
 .inline-rb input {
-  /* margin-left: 1rem; */
   padding: 1rem;
   max-width: 20%;
   max-height: 32px;
@@ -591,7 +574,7 @@ textarea {
   padding: 10px;
   margin: 0.5rem 0 0 0;
   border: 1px solid var(--button-border-color);
-  border-radius: .85rem;
+  border-radius: 0.85rem;
 }
 
 .message {
@@ -606,17 +589,17 @@ textarea {
   padding-right: 0.5rem;
   margin-bottom: 2rem;
 }
+
 .counter p {
   font-size: 1rem;
-  }
-
-/* ======================================================*/
+}
 
 .user-email {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
 }
+
 .emails {
   display: flex;
   flex-direction: row;
@@ -627,7 +610,6 @@ textarea {
 .number-email {
   width: 50%;
 }
-/* ======================================================*/
 
 .mail2 {
   margin-bottom: 2px;
@@ -643,26 +625,22 @@ textarea {
   display: none;
   color: #db0000;
   font-weight: bold;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 /* ===================== Submit button START===========================*/
-
 .submit-btn {
   color: var(--button-color);
   background-color: var(--button-bcg-color);
-  border-radius: .85rem;
+  border-radius: 0.85rem;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.5s ease;
   font-weight: 600;
-  margin: 2rem auto .5rem auto;
+  margin: 2rem auto 0.5rem auto;
   align-items: center;
   max-width: 200px;
 }
-/* .submit-btn:not(:disabled) {
-  border: .2rem solid var(--button-border-color);
-} */
 
 .submit-btn:disabled {
   background-color: var(--button-bcg-color);
@@ -674,13 +652,13 @@ textarea {
 .submit-btn:hover:not(:disabled) {
   cursor: pointer;
 }
-
 /* ===================== Submit button END ===========================*/
+
 .thanks {
   display: none;
   text-align: center;
   margin-top: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   background-color: var(--thanks-bcg-color);
 }
@@ -703,7 +681,7 @@ textarea {
 
 .scroll-up i:hover {
   scale: 2.5;
-  }
+}
 
 /* Patička */
 footer {
@@ -718,6 +696,3 @@ footer {
   color: var(--header-footer-text-color);
   font-size: 0.8rem;
 }
-
-
-
