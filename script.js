@@ -124,16 +124,16 @@ window.addEventListener("scroll", () => {
   const scrollPercent = (window.scrollY / computedScrollHeight) * 100;
 
   // Podmínka pro zobrazení ikony při scrollování nad určitá % scrollu
-  if (scrollPercent >= 70) {
-    scrollIcon.style.display = "block";
-  } else {
-    scrollIcon.style.display = "none";
-  }
-});
-
-// Funkce pro scrollování nahoru do nuly
-scrollBox.addEventListener("click", () => {
-  window.scrollTo({
+    if (scrollPercent >= 30) {
+      scrollIcon.style.display = "block";
+    } else {
+      scrollIcon.style.display = "none";
+    }
+  });
+  
+  // Funkce pro scrollování nahoru do nuly
+  scrollBox.addEventListener("click", () => {
+    window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
